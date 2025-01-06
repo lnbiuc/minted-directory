@@ -55,10 +55,10 @@ const routesRef = computed(() => {
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
           <div class="flex gap-2 items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <AppHeaderColorSelector class="hidden md:flex" v-if="config?.navbar?.colorModeSelector" />
-            <NuxtLink :to="config?.actionButton?.href"
-              class="hidden md:block text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-              {{ config?.actionButton?.text }}
-            </NuxtLink>
+<!--            <NuxtLink :to="config?.actionButton?.href"-->
+<!--              class="hidden md:block text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">-->
+<!--              {{ config?.actionButton?.text }}-->
+<!--            </NuxtLink>-->
           </div>
 
         </div>
@@ -77,10 +77,10 @@ const routesRef = computed(() => {
 
       <div class="border-t border-gray-200 pb-3 pt-4">
         <div class="flex items-center px-4">
-          <NuxtLink :to="config?.actionButton?.href"
-            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-            {{ config?.actionButton?.text }}
-          </NuxtLink>
+<!--          <NuxtLink :to="config?.actionButton?.href"-->
+<!--            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">-->
+<!--            {{ config?.actionButton?.text }}-->
+<!--          </NuxtLink>-->
           <AppHeaderColorSelector class="relative ml-auto" v-if="config?.navbar?.colorModeSelector" />
         </div>
       </div>

@@ -27,18 +27,18 @@ Codename:       noble
 
 ## 更新系统软件
 
-```sh
+```bash
 sudo apt-get update
 sudo NEEDRESTART_MODE=a apt-get upgrade --yes
 ```
 
 ## 安装SteamCMD
 
-```sh
+```bash
 sudo add-apt-repository multiverse; sudo dpkg --add-architecture i386; sudo apt update
 ```
 
-```sh
+```bash
 sudo apt install steamcmd
 ```
 
@@ -46,7 +46,7 @@ sudo apt install steamcmd
 
 此指令同样可用于游戏服务端更新（更新前需停止游戏服务器）
 
-```sh
+```bash
 steamcmd +force_install_dir ~/SatisfactoryDedicatedServer +login anonymous +app_update 1690800 -beta experimental validate +quit
 ```
 
@@ -54,13 +54,13 @@ steamcmd +force_install_dir ~/SatisfactoryDedicatedServer +login anonymous +app_
 
 此时服务器文件应该位于root用户目录下，需要将其移动到执行用户目录下，此处使用的用户名为violet，实际使用需要自行替换
 
-```sh
+```bash
 mv /root/SatisfactoryDedicatedServer /home/violet/
 ```
 
 创建启动脚本
 
-```sh
+```bash
 vi /etc/systemd/system/satisfactory.service
 ```
 
@@ -92,20 +92,20 @@ WorkingDirectory=/home/violet/SatisfactoryDedicatedServer
 WantedBy=multi-user.target
 ```
 
-```sh
+```bash
 systemctl daemon-reload
 systemctl enable satisfactory
 ```
 
 切换到非root用户后执行，可能需要输入密码
 
-```sh
+```bash
 sudo systemctl start satisfactory
 ```
 
 查看状态
 
-```sh
+```bash
 sudo systemctl status satisfactory
 ```
 
@@ -114,7 +114,7 @@ sudo systemctl status satisfactory
 
 文件夹没有可以自行创建，注意大小写
 
-```sh
+```bash
 /home/violet/SatisfactoryDedicatedServer/FactoryGame/Saved/Config/LinuxServer
 ```
 
@@ -126,6 +126,6 @@ MaxPlayers=30
 
 重启服务器
 
-```sh
+```bash
 sudo systemctl restart satisfactory
 ```

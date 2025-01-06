@@ -6,7 +6,7 @@ ogImage:
 ---
 
 ::center-hero{icon="tabler:ad-2"}
-# Advertise your new app!
+# About
 
 #description
 Reach out to thousands of boilerplate fans, indiehackers, developers, and creators who visit and explore MintedDirectory every month. By advertising your service or product here, you’ll be able to connect directly with this engaged audience. :rocket:

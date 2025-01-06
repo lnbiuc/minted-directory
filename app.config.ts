@@ -12,7 +12,7 @@ export default defineAppConfig({
     // url is necessary for correct function of seo module.
     name: "Minted Directory",
     description: "Example Description",
-    url: "https://example.com",
+    url: "https://https://violet-nt.zeabur.app/",
     favicon: {
       image: "",
       emoji: "🍃",
@@ -37,12 +37,12 @@ export default defineAppConfig({
         icon: "tabler:exclamation-mark",
       },
       card: {
-        image: true,
+        image: false,
         // options: dashed, shadow, outline, bullet
         type: "shadow",
       },
       submit: {
-        show: true,
+        show: false,
         first: false,
         title: "Submit a template",
         description:
@@ -56,24 +56,24 @@ export default defineAppConfig({
       icon: "tabler:star",
       labelForCard: "Featured ✨",
     },
-    tags: [
-      { name: "SAAS", color: "blue" },
-      { name: "dashboard", color: "green" },
-      { name: "landing-page" },
-      { name: "toolbox" },
-      { name: "agency" },
-      { name: "markdown-based" },
-      { name: "basics", color: "indigo" },
-    ],
-    tagPages: {
-      title: "Available {0} products:",
-      description:
-        "View all available tools and templates in the {0} category...",
-    },
+    // tags: [
+    //   { name: "SAAS", color: "blue" },
+    //   { name: "dashboard", color: "green" },
+    //   { name: "landing-page" },
+    //   { name: "toolbox" },
+    //   { name: "agency" },
+    //   { name: "markdown-based" },
+    //   { name: "basics", color: "indigo" },
+    // ],
+    // tagPages: {
+    //   title: "Available {0} products:",
+    //   description:
+    //     "View all available tools and templates in the {0} category...",
+    // },
   },
   header: {
     banner: {
-      show: true,
+      show: false,
       text: "Create your own directory website in minutes.",
       link: "https://minteddirectory.com",
       brandText: "MintedDirectory",
@@ -81,44 +81,44 @@ export default defineAppConfig({
     navbar: {
       colorModeSelector: true,
       links: [
-        { name: "Directory", to: "/" },
+        { name: "Home", to: "/" },
         { name: "Blog", to: "/blog" },
-        { name: "Advertise", to: "/advertise" },
-        {
-          name: "Analytics",
-          to: "https://us.posthog.com/shared/7dgSk4cvgNYnJwBu6R47kZXHBUBJWQ",
-          target: "_blank",
-        },
+        { name: "About", to: "/about" },
+        // {
+        //   name: "Analytics",
+        //   to: "https://us.posthog.com/shared/7dgSk4cvgNYnJwBu6R47kZXHBUBJWQ",
+        //   target: "_blank",
+        // },
       ],
     },
-    actionButton: {
-      text: "Submit a starter",
-      href: "/submit",
-    },
+    // actionButton: {
+    //   text: "Submit a starter",
+    //   href: "/submit",
+    // },
   },
   footer: {
     description: "Best directory for my niche.",
     socials: {
       github: {
-        link: "",
+        link: "https://github.com/lnbiuc",
         icon: "tabler:brand-github",
       },
-      facebook: {
-        link: "",
-        icon: "tabler:brand-facebook",
-      },
-      instagram: {
-        link: "",
-        icon: "tabler:brand-instagram",
-      },
+      // facebook: {
+      //   link: "",
+      //   icon: "tabler:brand-facebook",
+      // },
+      // instagram: {
+      //   link: "",
+      //   icon: "tabler:brand-instagram",
+      // },
       x: {
         link: "https://x.com/mark_bruderer",
-        icon: "tabler:brand-twitter",
+        icon: "tabler:brand-x",
       },
-      youtube: {
-        link: "https://www.youtube.com/@mark_hacks",
-        icon: "tabler:brand-youtube",
-      },
+      // youtube: {
+      //   link: "https://www.youtube.com/@mark_hacks",
+      //   icon: "tabler:brand-youtube",
+      // },
     },
   },
   ui: {
