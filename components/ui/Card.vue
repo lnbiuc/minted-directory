@@ -11,7 +11,7 @@ defineProps(['item']);
     :class="cardConfig?.type === 'shadow' ? 'shadow-sm' : cardConfig?.type === 'dashed' ? 'border-dashed' : ''">
     <DirectoryFeaturedTag class="ml-6" v-if="item.featured" />
     <NuxtImg v-if="item.card_image" sizes="400px" :alt="`${item.title} banner`"
-      class="w-full h-48 rounded-t object-cover" :src="item.card_image ?? '/logo.png'" />
+      class="w-full h-48 rounded-t object-cover" :src="item.card_image ?? '/default_cover.jpg'" />
     <div v-else
       class="w-full h-48 flex justify-center items-center rounded-t font-bold text-2xl bg-gray-200 dark:bg-gray-600">
       {{ item.title }}

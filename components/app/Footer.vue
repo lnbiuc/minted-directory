@@ -12,7 +12,7 @@ const navigation = [
     title: "Categories", links: config.directory.tags?.filter(e => e && (e as Tag).name).map(e => ({ title: (e as Tag).name, link: `/tags/${(e as Tag).name}` })).slice(0, 4),
   },
   {
-    title: "Blog", links: [{ title: "Articles", link: "/blog" }],
+    title: "Blog", links: [{ title: "Articles", link: "/articlearticle" }],
   },
   {
     title: "Legal", links: [{ title: "Privacy Policy", link: "/legal/terms-of-service" }, { title: "Terms of Service", link: "/legal/privacy-policy" }],

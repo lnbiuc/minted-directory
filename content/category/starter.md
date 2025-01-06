@@ -1,5 +1,5 @@
 ---
-cover: /logo.png
+card_image: /default_cover.jpg
 featured: true
 tags:
   - SAAS

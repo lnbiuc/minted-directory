@@ -11,7 +11,7 @@ export default {
         display: ["DM Sans"],
       },
       colors: {
-        primary: colors.sky,
+        primary: colors.violet,
         secondary: colors.indigo,
         gray: colors.zinc,
       },

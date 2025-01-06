@@ -1,3 +1,10 @@
+---
+card_image: /default_cover.jpg
+#featured: true
+#tags:
+#  - SAAS
+---
+
 # Example Blog Post
 
 content of the first blog post. 🌺

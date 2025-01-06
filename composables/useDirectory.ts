@@ -3,7 +3,7 @@ import type ListingContent from "~/types/Listing";
 
 export function useDirectory() {
   const directoryData = useAsyncData("board", () => {
-    const query = queryContent("/dir");
+    const query = queryContent("/category");
 
     query.where({
       _extension: "md",

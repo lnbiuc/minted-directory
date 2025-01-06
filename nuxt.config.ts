@@ -49,7 +49,7 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: "https://example.com",
+    url: "https://violet-nt.zeabur.app",
   },
   compatibilityDate: "2024-09-20",
 });

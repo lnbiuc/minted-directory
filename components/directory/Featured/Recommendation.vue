@@ -2,7 +2,7 @@
 import type { AsyncData } from '#app';
 import type ListingContent from '~/types/Listing';
 
-const { data: featured } = await useAsyncData('featured', () => queryContent('/dir').where({ featured: { $exists: true } }).only(['title', 'description', '_path', 'card_image']).findOne()) as AsyncData<ListingContent, Error | null>;
+const { data: featured } = await useAsyncData('featured', () => queryContent('/category').where({ featured: { $exists: true } }).only(['title', 'description', '_path', 'card_image']).findOne()) as AsyncData<ListingContent, Error | null>;
 const config = useAppConfig();
 const featuredExists = computed(() => featured.value);
 </script>

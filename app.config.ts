@@ -12,7 +12,7 @@ export default defineAppConfig({
     // url is necessary for correct function of seo module.
     name: "Minted Directory",
     description: "Example Description",
-    url: "https://https://violet-nt.zeabur.app/",
+    url: "https://violet-nt.zeabur.app",
     favicon: {
       image: "",
       emoji: "🍃",
@@ -82,8 +82,9 @@ export default defineAppConfig({
       colorModeSelector: true,
       links: [
         { name: "Home", to: "/" },
-        { name: "Blog", to: "/blog" },
-        { name: "About", to: "/about" },
+        { name: "Article", to: "/article" },
+        { name: "Short", to: "/short" },
+        { name: "Friend", to: "/friend" },
         // {
         //   name: "Analytics",
         //   to: "https://us.posthog.com/shared/7dgSk4cvgNYnJwBu6R47kZXHBUBJWQ",
